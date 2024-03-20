@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="passGen.html">PASSGEN</a></li>
+          <li><a href="calci.html">CALCI</a></li>
+          <li><a href="#">TO DO</a></li>
+          <li><a href="#">FEEDBACK</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+      <h1 id="started">Let's get <span>started</span></h1>
+      <div class="typing">
+        <h3 id="type">This website has a <span class="auto-type"></span></h3>
+        <h3>This is a simple project made by me to practice</h3>
+        <h3>
+          and improve my <span>HTML</span> , <span>CSS</span> and
+          <span>Javascript</span> skills
+        </h3>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: [
+          "random password generator....",
+          "calculator.....",
+          "to do list software...",
+        ],
+        typeSpeed: 100,
+        backSpeed: 50,
+        looped: true,
+        loopCount: Infinity,
+      });
+    </script>
+  </body>
+</html>

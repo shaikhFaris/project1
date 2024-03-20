@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calci.css" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <!-- <li><a href="#">PASSGEN</a></li> -->
+          <!-- <li><a href="calci.html">CALCI</a></li> -->
+          <!-- <li><a href="#">TO DO</a></li> -->
+          <li><a href="#">FEEDBACK</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="header">
+          <h1>CALCULATOR</h1>
+        </div>
+        <div class="inputNo">
+          <div class="no1">
+            <span id="num1p1">0</span> <span id="num1p2">0</span>
+          </div>
+          <div class="no2">
+            <span id="num2p1">0</span> <span id="num2p2">0</span>
+          </div>
+        </div>
+        <div class="calci">
+          <div>
+            <button class="no" id="one" onclick="noClick(1)">1</button>
+            <button class="no" id="two" onclick="noClick(2)">2</button>
+            <button class="no" id="three" onclick="noClick(3)">3</button>
+          </div>
+          <div>
+            <button class="no" id="four" onclick="noClick(4)">4</button>
+            <button class="no" id="five" onclick="noClick(5)">5</button>
+            <button class="no" id="six" onclick="noClick(6)">6</button>
+          </div>
+          <div>
+            <button class="no" id="seven" onclick="noClick(7)">7</button>
+            <button class="no" id="eight" onclick="noClick(8)">8</button>
+            <button class="no" id="nine" onclick="noClick(9)">9</button>
+          </div>
+          <button class="no" id="zero" onclick="noClick(0)">0</button>
+          <button class="no" onclick="next()">>></button>
+        </div>
+        <div id="operationsdiv">
+          <button class="operations" onclick="add()">ADD</button>
+          <button class="operations" onclick="substract()">SUBSTRACT</button>
+          <button class="operations" onclick="multiply()">MULTIPLY</button>
+          <button class="operations" onclick="divide()">DIVIDE</button>
+          <button class="operations" onclick="clearNum()">CLEAR</button>
+        </div>
+        <!-- <div class="save">
+        <button id="save-btn">SAVE</button>
+      </div> -->
+        <p id="result">RESULT:</p>
+      </div>
+    </div>
+    <script src="calci.js"></script>
+  </body>
+</html>

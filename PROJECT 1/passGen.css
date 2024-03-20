@@ -1,0 +1,224 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+    /* overflow-y: hidden; */
+}
+
+.logo{
+    width: 144px;
+    height: 80px;
+    border-radius: 50px;
+    /* border: 1px solid white ; */
+}
+.navbar{
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 15px; */
+    padding: 0;
+
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    justify-content: center;
+    padding-inline-start:0px
+}
+.navbar li{
+    margin: 20px;
+    text-decoration: none;
+    list-style: none;
+    z-index: +1;
+}
+.navbar li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    text-shadow: black 0 0 5px;
+    text-transform: uppercase;
+}
+
+.navbar li a::after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color:#04e762;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.3s ease 0s;
+}
+.navbar li a:hover::after{
+    width: 100%;
+}
+
+
+.passMain{
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.75),rgba(0,0,0,0.1),rgba(0,0,0,0.65)),url("images/backg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+#mainChild{
+    position: absolute;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    top: 30px;
+    left: 130px;
+    border-radius: 20px;
+    width: 1000px;
+}
+h1{
+    margin:70px 0px 48px 191px;
+    font-size: 50px;
+    font-family: cursive;
+    text-align: center;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+}
+
+p{
+    text-align:center;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#copy-icon{
+    width: 30px;
+    height: 30px;
+    /* border: 2px solid red; */
+}
+#displayPass-para{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 600px;
+    height: 30px;
+    display: block;
+    color: rgba(255, 255, 255,0.9);
+
+    /* padding:5px 0px; */
+    padding-top: 5px;
+    padding-bottom: 0;
+    font-size: 20px;
+    margin-top: 12px;
+}
+#copy-btn{
+    margin: 5px;
+    display: block;
+    width: 49px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+#flex-container{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    width: 900px;
+    margin: 0px auto;
+    margin-top: 90px;
+    height: 59px;
+}
+#theme-btn{
+    width: 40px;
+    height: 30px;
+}
+.progress-bar{
+    border: 1px solid black;
+    background-color: gray;
+    width: 80%;
+    height: 30px;
+    border-radius: 2px;
+    margin: 30px auto;
+    margin-bottom: 50px;
+}
+.bar{
+    height: 100%;
+    background-color: #04e762;
+    border-radius: 2px;
+}
+
+#save-btn{
+    margin: 15px auto;
+    display: block;
+    width:153px;
+    height: 45px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    transition: transform 0.3s ease 0s;
+}
+#save-btn:hover{
+    transform: translateY(-10px);
+}
+#temp-btn{
+    margin: 15px auto;
+    display: block;
+    width:153px;
+    height: 45px;
+    border-radius: 20px;
+    border: 1px solid black;
+    /* background-color: white;
+     */
+     background-color: #1a8a49;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.temp-para{
+    margin: 0;
+    position: absolute;
+    /* top: 0px; */
+    bottom: 235px;
+    right: 124px;
+    background-color:black;
+    color:white;
+    width: 60px;
+    height: 20px;
+    border-bottom: 2px solid white;
+    /* border: 1px solid white; */
+    /* border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    animation-name: disappear;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 1ms;
+    opacity: 0;
+
+}
+@keyframes disappear{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+#theme-btn{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50px;
+    width: 60px;
+}
+#theme-btn:hover{
+    background-color: rgb(52, 52, 52);
+}

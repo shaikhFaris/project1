@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password-Generator</title>
+    <link rel="stylesheet" href="passGen.css" />
+  </head>
+  <body>
+    <div class="passMain">
+      <div class="navbar">
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">FEEDBACK</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+      <div id="mainChild">
+        <div class="header">
+          <h1>PASSWORD GENERATOR</h1>
+          <button id="theme-btn">theme</button>
+        </div>
+        <p id="para1">
+          Why to break your head thinking about secure passwords when this
+          website is available.
+        </p>
+        <p id="para2">Get your own unique passwords here.......</p>
+        <div id="flex-container">
+          <p id="displayPass-para"></p>
+          <button id="copy-btn" onclick="copy()">
+            <img src="images/copy-icon.jpg" alt="copy-icon" id="copy-icon" />
+          </button>
+        </div>
+        <div id="generateDiv">
+          <button id="save-btn">⚡️ GENERATE</button>
+        </div>
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+    <script src="passGen.js"></script>
+  </body>
+</html>
